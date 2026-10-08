@@ -5,13 +5,13 @@
 Use Python 3.12.
 
 ```bash
-cd reachy-mini
+cd lab3
 python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-In every new terminal, go to the `reachy-mini` folder and run `source .venv/bin/activate` first.
+In every new terminal, go to the `lab3` folder and run `source .venv/bin/activate` first.
 
 ## Step 2: Robot and models
 
@@ -46,7 +46,7 @@ Type `q` to quit.
 
 ## Using an OpenAI API key (optional)
 
-Put a file named `.env` in the `reachy-mini` folder (skip this if it is already there), containing:
+Put a file named `.env` in the `lab3` folder (skip this if it is already there), containing:
 
 ```
 OPENAI_API_KEY=sk-...
