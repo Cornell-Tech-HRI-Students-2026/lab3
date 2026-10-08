@@ -16,8 +16,10 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from reachy_mini import ReachyMini
 from reachy_mini.utils import create_head_pose
+import pyttsx3
+engine = pyttsx3.init()
 
-ROBOT_IP = "<robot address>"  # change to your robot's IP address
+ROBOT_IP = "localhost"  # change to your robot's IP address
 
 USE_API = "--api" in sys.argv
 if USE_API:
@@ -62,8 +64,12 @@ def image_content(frame, text):
 def speak(mini, text):
     """Say text out loud on the robot's speaker (only with --api)."""
     if not SPEAK:
+        # using pyttsx3 library -> robotic-like voice (cringe)
+        engine.say(text)
+        engine.runAndWait()
         return
     path = os.path.abspath("last_speech.wav")
+    print(f"Playing .wav file located: {path}...")
     with client.audio.speech.with_streaming_response.create(
         model=TTS_MODEL, voice="alloy", input=text, response_format="wav"
     ) as response:
