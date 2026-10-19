@@ -2,7 +2,7 @@
 
 ## Step 0: Install Reachy Mini SDK (Optional: if not installed)
 
-See instrcutions here [Installation Guide](https://huggingface.co/docs/reachy_mini/en/SDK/installation)
+See instructions here [Installation Guide](https://huggingface.co/docs/reachy_mini/en/SDK/installation).
 
 ## Step 1: Install (once)
 
