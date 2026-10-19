@@ -19,7 +19,7 @@ from reachy_mini.utils import create_head_pose
 import pyttsx3
 engine = pyttsx3.init()
 
-ROBOT_IP = "localhost"  # change to your robot's IP address
+ROBOT_IP = "192.168.8.199"#"localhost"  # change to your robot's IP address
 
 USE_API = "--api" in sys.argv
 if USE_API:

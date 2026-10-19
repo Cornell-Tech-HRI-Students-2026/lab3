@@ -1,5 +1,9 @@
 # Setup: run the demos step by step
 
+## Step 0: Install Reachy Mini SDK (Optional: if not installed)
+
+See instrcutions here [Installation Guide](https://huggingface.co/docs/reachy_mini/en/SDK/installation)
+
 ## Step 1: Install (once)
 
 Use Python 3.12.
